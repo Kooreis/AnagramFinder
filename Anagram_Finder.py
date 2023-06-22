@@ -1,2 +1,2 @@
-def anagram_finder():
-    words = input("Enter two words separated by a space: ").split()
+word1 = sorted(words[0])
+word2 = sorted(words[1])
