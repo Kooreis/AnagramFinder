@@ -1,14 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+List<string> anagrams = FindAnagrams(word, wordList);
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Enter a word:");
-        string word = Console.ReadLine();
-        Console.WriteLine("Enter a list of words (separated by comma):");
-        string words = Console.ReadLine();
-        List<string> wordList = words.Split(',').ToList();
-    }
+        Console.WriteLine("Anagrams found:");
+        foreach (string anagram in anagrams)
+        {
+            Console.WriteLine(anagram);
+        }
